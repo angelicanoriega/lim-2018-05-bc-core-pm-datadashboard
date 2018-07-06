@@ -15,11 +15,11 @@ describe('data', () => {
   it('debería exponer función processCohortData en objeto global', () => {
     assert.isFunction(processCohortData);
   });
-
+const cohort = fixtures.cohorts.find(item => item.id === 'lim-2018-03-pre-core-pw');
+    const courses = Object.keys(cohort.coursesIndex);
   describe('computeUsersStats(users, progress, courses)', () => {
 
-    const cohort = fixtures.cohorts.find(item => item.id === 'lim-2018-03-pre-core-pw');
-    const courses = Object.keys(cohort.coursesIndex);
+    
     const { users, progress } = fixtures;
     
     it('debería retornar arreglo de usuarios con propiedad stats', () => {
@@ -180,18 +180,20 @@ describe('data', () => {
   });
 
   describe('processCohortData({ cohortData, orderBy, orderDirection, filterBy })', () => {
+    const { users, progress } = fixtures;
+  let option = {
+    cohortData: {
+      users: users,
+      progress: progress
+    },
+    orderBy:"alazar",
+    orderDirection: "alazar",
+    search: "milagros"
+  };
+  let data = processCohortData(option);
 
     it('debería retornar arreglo de usuarios con propiedad stats y aplicar sort y filter',()=>{
-      const processed = processCohortData(option);
-      assert.equal(users.length, processed.length);
-
-      processed.forEach(user => {
-        assert.ok(user.hasOwnProperty('stats'));
-        assert.isNumber(user.stats.percent);
-        assert.isObject(user.stats.exercises);
-        assert.isObject(user.stats.quizzes);
-        assert.isObject(user.stats.reads);
-      });
+      assert.deepEqual(data[0].name, "Erika Milagros");
       
 
     });

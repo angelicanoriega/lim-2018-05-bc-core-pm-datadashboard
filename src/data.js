@@ -345,7 +345,6 @@ if(orderBy === "Lectura")
     let nameB=b.stats.reads.percent;
     
     return nameB-nameA 
-    console.log(users);
     })
   }
 } 
@@ -412,7 +411,7 @@ const filterUsers = (users, search) => {
 }
 const processCohortData = (options) => {
   
-  courses=options.cohort.coursesIndex;
+  courses=options.cohort;
   users=options.cohortData.users;
   progress=options.cohortData.progress; 
   orderBy=options.orderBy;
