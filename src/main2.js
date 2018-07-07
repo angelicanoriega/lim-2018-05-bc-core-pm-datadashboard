@@ -1,4 +1,4 @@
-
+//en esta carpeta main 2 estoy almacenando todos lo datos a usar
 // juntando toda la informacion del json con que quiere ordenar y si es asc o desc
 let option ={
     cohort:null,
