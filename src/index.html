@@ -9,64 +9,67 @@
 </head>
 
 <body>
-<div class="container">
- <section class="main">
-  <p>Intrucciones:<br>
-  1.Seleciona una Sede. </p>  
-  <br>
-  <p>Sede:</p>
-  <select id="listCountry">
-  <option value="spl">Brasil</option>
-  <option value="scl">Chile</option>
-  <option value="cdmx">México</option>
-  <option value="lim">Perú</option>
-  </select>
-  <br> 
-  <p>2.Selecciona un grupo. </p> 
-  <select id="listcohorts" > 
-<!--aqui van las opciones creadas desde main.js-->
-  </select>
+<header class="container">
+ <input type="checkbox"  id="list_menu">
+ <label for="list_menu"><img src="../img/menu.png" alt="icono"></label>
+ <nav class="menu">
+    <div>
+    <p>Intrucciones:<br>
+    1.Seleciona una Sede. </p>  
     <br>
-    <p>3.En esta parte puede filtrar u ordenar<br> a las alumnas dando click al botón buscar. </p> 
-    <p>Nombre a filtrar:</p>
-    <input type="text" id="search"  name="q" placeholder="Buscar en tabla de ordenado">
-    <br>  
-  <!--aqui van las opciones ordeBY-->
-    <p>Ordenar por:</p>
-    <select id="listorder">
-    <option >Ordenar por:</option>
-    <option value="Porcentaje">Porcentaje General</option>
-    <option value="Nombre">Nombre</option>
-    <option value="Ejercicios">Porcentaje Ejercicios</option>
-    <option value="Lectura">Porcentaje Lectura</option>
-    <option value="Quizes">Notas Quizes</option>
-    <option value="PQuizes">Porcentaje Quizes</option>
+    <p>Sede:</p>
+    <select id="listCountry">
+    <option value="spl">Brasil</option>
+    <option value="scl">Chile</option>
+    <option value="cdmx">México</option>
+    <option value="lim">Perú</option>
     </select>
-  <!--aqui van las opciones ASC Y DESC-->
-    <p>Ordenar por:</p>
-    <select id="listASD/DESC">
-    <option >Ordenar por:</option>
-    <option value="ASC">ASC</option>
-    <option value="DESC">DESC</option>
-    </select>
-    <input type="button" id="botton-orden" value="buscar">
-  </section>
-  <section >
-  <br>  
-  <br>
-  <br>
-  <p>En esta parte el resultado de dar click<br> en la lista de alumnas será más específico <br>
-  (por unidades) </p>
-  <p>filtrar nombres:</p>
-  <input type="text" id="searchUsers"  name="q" placeholder="Buscar por nombre">
-  <br>
-  <p>Lista de alumnas:</p>
-  <select id="listusers" multiple> 
+    <br> 
+    <p>2.Selecciona un grupo. </p> 
+    <select id="listcohorts" > 
   <!--aqui van las opciones creadas desde main.js-->
-  </select> 
-  </section> 
-     
-</div>
+    </select>
+      <br>
+      <p>3.En esta parte puede filtrar u ordenar<br> a las alumnas dando click al botón buscar. </p> 
+      <p>Nombre a filtrar:</p>
+      <input type="text" id="search"  name="q" placeholder="Buscar en tabla de ordenado">
+      <br>  
+    <!--aqui van las opciones ordeBY-->
+      <p>Ordenar por:</p>
+      <select id="listorder">
+      <option >Ordenar por:</option>
+      <option value="Porcentaje">Porcentaje General</option>
+      <option value="Nombre">Nombre</option>
+      <option value="Ejercicios">Porcentaje Ejercicios</option>
+      <option value="Lectura">Porcentaje Lectura</option>
+      <option value="Quizes">Notas Quizes</option>
+      <option value="PQuizes">Porcentaje Quizes</option>
+      </select>
+    <!--aqui van las opciones ASC Y DESC-->
+      <p>Ordenar por:</p>
+      <select id="listASD/DESC">
+      <option >Ordenar por:</option>
+      <option value="ASC">ASC</option>
+      <option value="DESC">DESC</option>
+      </select>
+      <input type="button" id="botton-orden" value="buscar">
+    </div>
+    <div >
+    <br>  
+    <br>
+    <br>
+    <p>En esta parte el resultado de dar click<br> en la lista de alumnas será más específico <br>
+    (por unidades) </p>
+    <p>filtrar nombres:</p>
+    <input type="text" id="searchUsers"  name="q" placeholder="Buscar por nombre">
+    <br>
+    <p>Lista de alumnas:</p>
+    <select id="listusers" multiple> 
+    <!--aqui van las opciones creadas desde main.js-->
+    </select> 
+    </div> 
+ </nav>   
+</header>
 
 <div class="secondcontainer"> 
  <table class="listado" id="ordenado"></table> 

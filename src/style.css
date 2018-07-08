@@ -3,4 +3,29 @@
     padding: 0;
     box-sizing: border-box;
 }
+header{
+width:270px;
+background-color: #ffff;
 
+}
+#list_menu{
+    display:none;
+}
+header label{
+    display: block;
+    width: 30px;
+    padding: 10px;
+}
+.menu{
+    border: solid;
+    background-color: #ffff;
+     padding:10px ;
+    position: absolute;
+     margin-left: -310px;
+     transition: all 0.5s;
+     height: 100%;
+
+}
+#list_menu:checked ~ .menu{
+    margin: 0;
+}
