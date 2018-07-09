@@ -401,10 +401,13 @@ if(orderBy === "PQuizes")
 }
 
 const filterUsers = (users, search) => {
-  
-  return users.filter((user) => {
-    return user.name.toLowerCase().indexOf(search.toLowerCase()) > -1;
-  })
+//console.log(search);   
+//console.log(users);
+
+return users.filter((namefilter) =>
+   {
+    return namefilter.name.toLowerCase().indexOf(search.toLowerCase()) > -1;
+   })
   
   
 }
@@ -423,6 +426,7 @@ const processCohortData = (options) => {
  
   return searchNmame
 }
+
 
   window.computeUsersStats = computeUsersStats;
   window.sortUsers = sortUsers;
