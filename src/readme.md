@@ -41,3 +41,8 @@ Por ese medio no pueden hacer comparaciones con respecto a los datos obtenidos, 
 
 En el prototipo de alta fidelidad se muestra el promedio general del cohort selecionado, 
 tambien se ve que al seleccionar a una aqlumna muestra sus porcentajes deneralews y expecificos de sus unidades
+## PRODUCTO FINAL
+
+Los siguentes videos muestran el producto final; El cual es responsive, posee un menu deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, muestra sus avances por unidades.
+![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/figma%20en%20gif.gif)
+![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/figma%20en%20gif.gif)

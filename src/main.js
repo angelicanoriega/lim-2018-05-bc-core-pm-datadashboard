@@ -11,10 +11,10 @@ let  inArray = document.getElementById("prueba")
 const selection = document.getElementById("listCohorts");
 const selectionUsers = document.getElementById("listUsers");
 const allPercentUser = document.getElementById("general");
-const allPercentUserExercise = document.getElementById("generalExercises");
-const allPercentUserRead = document.getElementById("generalReadings");
-const allPercentUserQuiz = document.getElementById("generalQuiz");
-const qualificationUserQuiz = document.getElementById("generalScore");
+const allPercentUserExercise = document.getElementById("generalexercises");
+const allPercentUserRead = document.getElementById("generalreadings");
+const allPercentUserQuiz = document.getElementById("generalquiz");
+const qualificationUserQuiz = document.getElementById("generalscore");
 const percentUserU1 = document.getElementById("unit1");
 const percentUserUnitOneRead  = document.getElementById("firstUnitReading");
 const percentUserUnitOneQuiz = document.getElementById("firstUnitQuiz");
@@ -117,6 +117,8 @@ selection.addEventListener("change", (event) => {
         })
       })
     })
+  }
+  else{ alert("no hay datos");
   }
 })
 
