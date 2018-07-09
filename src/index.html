@@ -6,10 +6,16 @@
     <meta charset="utf-8">
     <title>Data Dashboard</title>
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="style2.css" />
+
 </head>
+<div class="logo">
+    <img src="../img/LaboratoriaLogo1.png" alt="logo laboratoria"> 
+   </div> 
 
 <body>
 <header class="container">
+ <h1 class="data">Datadashboard</h1>
  <input type="checkbox"  id="list_menu">
  <label for="list_menu"><img src="../img/menu.png" alt="icono"></label>
  <nav class="menu">
@@ -55,9 +61,7 @@
       <input type="button" id="botton-orden" value="buscar">
     </div>
     <div >
-    <br>  
-    <br>
-    <br>
+  
     <p>En esta parte el resultado de dar click<br> en la lista de alumnas será más específico <br>
     (por unidades) </p>
     <p>filtrar nombres:</p>
@@ -70,24 +74,22 @@
     </div> 
  </nav>   
 </header>
-
+<section>
 <div class="secondcontainer"> 
- <table class="listado" id="ordenado"></table> 
- <p id="prueba">aqui</p>
+ <table  class="listado" id="ordenado"></table> 
+</section>
+<section> 
+ <p id="prueba"></p>
  <div class="table" id="generaltable">
   <table>
     <tr id="General">
     </tr>
-    <br>
     <tr id="generalexercises">
     </tr>
-    <br>
     <tr id="generalreadings">
     </tr>
-    <br>
     <tr id="generalquiz">
     </tr>
-    <br>
     <tr id="generalscore">
     </tr>
   </table>
@@ -141,7 +143,7 @@
   </table>
   </div>              
 </div>     
- 
+</section> 
 
 <script src="main2.js"></script>
 <script src="data.js"></script>
