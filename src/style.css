@@ -5,7 +5,6 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Aldrich', sans-serif;
-    background: rgba(43, 43, 43, 0.15);
 
 }
 header{
@@ -82,9 +81,15 @@ input,select{
     font-size: 12px;
 }
  @media only screen and (min-width: 615px) {
-        th,td{
-            font-size: 20px;    
-            text-align:center;
-            width:100%;
-     
-        }}
+th,td{
+    font-size: 20px;    
+    text-align:center;
+    width:100%;
+
+}
+*{
+background: rgba(43, 43, 43, 0.15);
+
+}
+}
+
