@@ -78,9 +78,11 @@ Por eso los objetivos de los usuarios(TMs) con relación a este producto es:
 
 ## DIAGRAMA DE FLUJO
 
+
 ![Diagrama de Flujo](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/diagrama%20de%20lms.jpeg)
 
 ## PROTOTIPADO (Proceso de diseño)
+Link de figma (https://www.figma.com/proto/SA4VROn6GQBM5Q5sQQ5QLa1g/Untitled?scaling=min-zoom&node-id=5%3A0 )
 BAJA FIDELIDAD
 ![prototipo baja fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/baja%20fidelidad%202.jpeg) 
 ALTA FIDELIDAD
@@ -107,7 +109,7 @@ tambien se ve que al seleccionar a una aqlumna muestra sus porcentajes deneralew
 | 4. Incluir pruebas unitarias. | ✅
 | Resetear Descifrado | ✅
 | Interactuar con un menú | ✅
-|   - Ordenar estudiantes por completitud _general  |❌
+|   - Ordenar estudiantes por completitud _general  | ✅
 
 
 ## IMPLEMENTACIÓN DEL PROYECTO
@@ -137,7 +139,7 @@ comando `npm test`.
 
 ## PRODUCTO FINAL
 
-Los siguentes videos muestran el producto final; El cual es responsive, posee un menu deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, muestra sus avances por unidades.
+Los siguentes videos muestran el producto final; El cual es responsive, posee un menú deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, inclusive muestra sus avances por unidades.
 
 
 ![En laptod](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes%20readme/GIF%20repo1.gif)
