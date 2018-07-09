@@ -44,5 +44,6 @@ tambien se ve que al seleccionar a una aqlumna muestra sus porcentajes deneralew
 ## PRODUCTO FINAL
 
 Los siguentes videos muestran el producto final; El cual es responsive, posee un menu deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, muestra sus avances por unidades.
-![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/figma%20en%20gif.gif)
-![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/figma%20en%20gif.gif)
+
+![En laptod](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes%20readme/GIF%20repo1.gif)
+![En celular](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes%20readme/GIF%20repo%202.gif)
