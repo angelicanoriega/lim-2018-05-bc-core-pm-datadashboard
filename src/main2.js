@@ -39,29 +39,29 @@ const AllData = (Callback) =>
 
 //anidando el de la forma de ordenar
 
-const Select_ordenvalue = (Callback) => {
+const selectOrdenValue = (Callback) => {
     
-    Orderlist.addEventListener("change", (event)=>{
-      const ordenvalue=Orderlist.value;
-      console.log(ordenvalue);
-      Callback(ordenvalue)
+    orderList.addEventListener("change", (event)=>{
+      const ordenValue=orderList.value;
+      console.log(ordenValue);
+      Callback(ordenValue)
     })
     }
 //anidando asc o desc
 
-const Select_ASC_or_DESC = (Callback) => {
-      Asd_des.addEventListener("change", (event)=>{
-        const orderAsd_des=Asd_des.value;
-        console.log(orderAsd_des);
-        Callback(orderAsd_des)
+const selectAscDesc = (Callback) => {
+      ascDesc.addEventListener("change", (event)=>{
+        const orderAscDesc=ascDesc.value;
+        console.log(orderAscDesc);
+        Callback(orderAscDesc)
       })
       }
 const nameSelect = (Callback) => {
 
-    botton_orden.addEventListener("click", () => {
-         let search_filter = search_user_in_table_orden.value.toUpperCase();
-         console.log(search_filter);
-          Callback(search_filter)
+    bottonOrden.addEventListener("click", () => {
+         let searchFilter = searchUserInTableOrden.value.toUpperCase();
+         console.log(searchFilter);
+          Callback(searchFilter)
         }) 
     }    
 
@@ -73,16 +73,16 @@ const alldatawithorden = (Callback) =>{
         option.cohortData.users=data[1];
         option.cohortData.progress=data[2];
         
-        Select_ordenvalue((ordenvalue)=>{
-          option.orderBy=ordenvalue;  
+        selectOrdenValue((ordenValue)=>{
+          option.orderBy=ordenValue;  
         })
-        Select_ASC_or_DESC((orderAsd_des)=>{
-            option.orderDirection=orderAsd_des;
+        selectAscDesc((orderAscDesc)=>{
+            option.orderDirection=orderAscDesc;
          
        
         })
-        nameSelect((search_filter)=>{
-            option.search=search_filter;   
+        nameSelect((searchFilter)=>{
+            option.search=searchFilter;   
         })
 
         Callback(option)
