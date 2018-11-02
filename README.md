@@ -140,5 +140,5 @@ Los siguentes videos muestran el producto final; El cual es responsive, tambien 
 ![En celular](https://raw.githubusercontent.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/gh-pages/Imagenes-readme/GIF%20movile%20repo.gif)
 
 
-|**Creado by Martha Milagros Anticona Zola y Maria Angélica Noriega**|
+|**Creado by Maria Angélica Noriega**|
 |---------------------------------------------------------|
