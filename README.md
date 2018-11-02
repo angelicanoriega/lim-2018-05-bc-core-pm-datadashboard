@@ -79,7 +79,7 @@ Por eso los objetivos de los usuarios(TMs) con relación a este producto es:
 ## DIAGRAMA DE FLUJO
 
 
-![Diagrama de Flujo](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/diagrama%20de%20lms.jpeg)
+![Diagrama de Flujo](https://raw.githubusercontent.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/gh-pages/Imagenes-readme/diagrama%20de%20lms.jpeg)
 
 ## PROTOTIPADO (Proceso de diseño)
 Link de figma (https://www.figma.com/proto/SA4VROn6GQBM5Q5sQQ5QLa1g/Untitled?scaling=min-zoom&node-id=5%3A0 )
