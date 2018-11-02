@@ -133,9 +133,7 @@ comando `npm test`.
 
 ## PRODUCTO FINAL
 
-Los siguentes videos muestran el producto final; El cual es responsive, posee un menú deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, inclusive muestra sus avances por unidades.
-
-
+Los siguentes videos muestran el producto final; El cual es responsive, tambien muestra los datos de las alumnas no solo de manera general, inclusive muestra sus avances por unidades.
 
 ![En laptod](https://raw.githubusercontent.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/gh-pages/Imagenes-readme/GIF%20repo1.gif)
 
