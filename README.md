@@ -143,9 +143,9 @@ Los siguentes videos muestran el producto final; El cual es responsive, posee un
 
 
 
-![En laptod](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/Imagenes-readme/1.jpg)
+![En laptod](https://raw.githubusercontent.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/gh-pages/Imagenes-readme/GIF%20repo1.gif)
 
-![En celular](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes-20readme/GIF%20repo%202.gif)
+![En celular](https://raw.githubusercontent.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/gh-pages/Imagenes-readme/GIF%20movile%20repo.gif)
 
 
 |**Creado by Martha Milagros Anticona Zola y Maria Angélica Noriega**|
