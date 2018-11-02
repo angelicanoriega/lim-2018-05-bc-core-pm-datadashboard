@@ -1,154 +1,418 @@
 <!DOCTYPE html>
-
 <html>
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta charset="utf-8">
-    <title>Data Dashboard</title>
-    <link rel="stylesheet" href="style.css" />
 
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="./index.css">
 </head>
-<div class="logo">
-    <img src="../img/LaboratoriaLogo1.png" alt="logo laboratoria"> 
-   </div> 
 
 <body>
-<header class="container">
- <h1 class="data">Datadashboard</h1>
- <input type="checkbox"  id="list_menu">
- <label for="list_menu"><img src="../img/menu.png" alt="icono"></label>
- <nav class="menu">
-    <div>
-    <p>Intrucciones:<br>
-    1.Seleciona una Sede. </p>  
-    <br>
-    <p>Sede:</p>
-    <select id="listCountry">
-    <option value="spl">Brasil</option>
-    <option value="scl">Chile</option>
-    <option value="cdmx">México</option>
-    <option value="lim">Perú</option>
-    </select>
-    <br> 
-    <p>2.Selecciona un grupo. </p> 
-    <select id="listCohorts" > 
-  <!--aqui van las opciones creadas desde main.js-->
-    </select>
-      <br>
-      <p>3.En esta parte puede filtrar u ordenar<br> a las alumnas dando click al botón buscar. </p> 
-      <p>Nombre a filtrar:</p>
-      <input type="text" id="search"  name="q" placeholder="Buscar en tabla de ordenado">
-      <br>  
-    <!--aqui van las opciones ordeBY-->
-      <p>Ordenar por:</p>
-      <select id="listOrder">
-      <option >Ordenar por:</option>
-      <option value="Porcentaje">Porcentaje General</option>
-      <option value="Nombre">Nombre</option>
-      <option value="Ejercicios">Porcentaje Ejercicios</option>
-      <option value="Lectura">Porcentaje Lectura</option>
-      <option value="Quizes">Notas Quizes</option>
-      <option value="PQuizes">Porcentaje Quizes</option>
-      </select>
-    <!--aqui van las opciones ASC Y DESC-->
-      <p>Ordenar por:</p>
-      <select id="listSort">
-      <option >Ordenar por:</option>
-      <option value="ASC">ASC</option>
-      <option value="DESC">DESC</option>
-      </select>
-      <input type="button" id="botton-orden" value="buscar">
-    </div>
-    <div >
-  
-    <p>En esta parte el resultado de dar click<br> en la lista de alumnas será más específico <br>
-    (por unidades) </p>
-    <p>filtrar nombres:</p>
-    <input type="text" id="searchUsers"  name="q" placeholder="Buscar por nombre">
-    <br>
-    <p>Lista de alumnas:</p>
-    <select id="listUsers" multiple> 
-    <!--aqui van las opciones creadas desde main.js-->
-    </select> 
-    </div> 
- </nav>   
-</header>
-<section>
- <table  class="listado" id="ordenado"></table> 
-</section>
-<section> 
- <p id="prueba"></p>
- <div class="table" id="generaltable">
-  <table>
-    <tr id="general">
-    </tr>
-    <tr id="generalexercises">
-    </tr>
-    <tr id="generalreadings">
-    </tr>
-    <tr id="generalquiz">
-    </tr>
-    <tr id="generalscore">
-    </tr>
-  </table>
- </div>
- <div class="table" id="unitOneTable">
-  <table>
-    <tr id="unit1">
-    </tr>
-    <br>
-    <tr id="firstUnitReading">
-    </tr>
-    <br>
-    <tr id="firstUnitQuiz">
-    </tr>
-    <br>
-    <tr id="firstUnitScore">
-    </tr>
-  </table>
- </div>
- <div class="table" id="unitTwoTable">
-  <table>
-    <tr id="unit2">
-    </tr >
-    <br>
-    <tr id="secondUnitExercises">
-    </tr>
-    <br>
-    <tr id="secondUnitReading">
-    </tr>
-    <br>
-    <tr id="secondUnitQuiz" >
-    </tr>
-    <br>
-    <tr id="secondUnitScore">
-    </tr>
-  </table>
- </div>
- <div class="table" id="unitThreeTable">
-  <table>
-    <tr id="unit3">
-    </tr>
-    <br>
-    <tr id="threeUnitReading">
-    </tr>
-    <br>
-    <tr id="threeUnitQuiz">
-    </tr>
-    <br>
-    <tr id="threeUnitScore">
-    </tr>
-  </table>
-  </div>              
-</section> 
+    <div class="containerfluid ">
+        <div class="slider">
+            <div class="row">
+                <!-- Seclecion de sedes -->
+                <div class="col-md-3  colum pt-5">
+                    <div class="row">
+                        <div class="col-md-12 text-center">
+                            <h1 class="display-5">Data dasboard</h1>
+                        </div>
+                        <div class="col-md-12 text-center pt-3">
+                            <i class="fas fa-book-reader display-3"></i> </div>
+                        <div class="col-md-12 p-5">
+                            <div class="row">
+                                <div id="btn" class="col-md-12 btn ">
+                                    <h3 class="text-center">Intrucciones</h3>
+                                </div>
+                                <div id="menu" class="col-md-12 menu">
+                                    <div class="row">
+                                        <div class="col-md-12 pt-4">
+                                            <h5>1.Seleciona una Sede.</h5>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <select id="listCountry">
+                                                <option value="spl">Brasil</option>
+                                                <option value="scl">Chile</option>
+                                                <option value="cdmx">México</option>
+                                                <option value="lim">Perú</option>
+                                            </select>
+                                        </div>
+                                        <div class="col-md-12 pt-4">
+                                            <h5>2.Selecciona un grupo.</h5>
+                                            <select id="listCohorts">
+                                                <!--aqui van las opciones creadas desde main.js-->
+                                            </select>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- fin de seleccion de sedes -->
+                <!-- vista de resultados -->
+                <div class="col-md-9 p-5">
+                    <div class="row colum2">
+                        <!-- vista alumnos resultado general -->
+                        <div class="col-md-6 p-3 ">
+                            <div class="row ">
+                                <!-- inicio formulario de busqueda general -->
+                                <div class="col-md-12 text-center text-dark p-4">
+                                    <div class="row  color p-3 ">
+                                        <div class="col-md-12">
+                                            <h5>Nombre </h5>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <input type="text" id="search" name="q" placeholder="Buscar en tabla de ordenado">
+                                        </div>
+                                        <div class="col-md-12 pt-2">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <h5>Ordenar</h5>
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <!--aqui van las opciones ordeBY-->
+                                                    <select id="listOrder">
+                                                        <option>Ordenar por:</option>
+                                                        <option value="Porcentaje">Porcentaje General</option>
+                                                        <option value="Nombre">Nombre</option>
+                                                        <option value="Ejercicios">Porcentaje Ejercicios</option>
+                                                        <option value="Lectura">Porcentaje Lectura</option>
+                                                        <option value="Quizes">Notas Quizes</option>
+                                                        <option value="PQuizes">Porcentaje Quizes</option>
+                                                    </select>
 
+                                                </div>
+                                                <div class="col-md-6 ">
+                                                    <!--aqui van las opciones ASC Y DESC-->
+                                                    <select id="listSort">
+                                                        <option>Ordenar por:</option>
+                                                        <option value="ASC">ASC</option>
+                                                        <option value="DESC">DESC</option>
+                                                    </select>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12 pt-4">
+                                            <input type="button" id="botton-orden" value="Buscar">
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- fin formulario de busquda general -->
+                                <!-- tabla de resultados general -->
+                                <div class="col-md-12 text-center colum3 color ">
+                                    <table  id="ordenado">
+                                    </table>
+                                </div>
+
+                            </div>
+                        </div>
+                        <!-- fin vista alumnos resultado general -->
+                        <!-- vista alumnos resultado individual -->
+                        <div class="col-md-6 p-3 ">
+                            <div class="row ">
+                                <!-- inicio formulario de busqueda general -->
+                                <div class="col-md-12 text-center text-dark p-4">
+                                    <div class="row  color p-3 ">
+                                        <div class="col-md-12">
+                                            <h5>Nombre </h5>
+                                        </div>
+                                        <div class="col-md-12 ">
+                                            <input type="text" id="searchUsers" name="q" placeholder="Buscar en tabla de ordenado">
+                                        </div>
+                                        <div class="col-md-12 pt-4">
+                                            <select id="listUsers" multiple>
+                                            </select>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                            <!-- fin formulario de busquda general -->
+                            <!-- tabla de resultados general -->
+                            <div class="col-md-12 text-center colum3  color ">
+                                <div class="row " id="tabla">
+                                    <div class="col-md-12">
+                                        <div class="row">
+                                            <div class="col-md-12 ">
+                                                <div class="row">
+                                                    <div class="col-md-12 border border-dark border-top-0 border-right-0 border-left-0">
+                                                        <div class="row">
+                                                            <div class="col-12 col-md-6">
+                                                                <h5 id="prueba"></h5>
+                                                            </div>
+                                                            <div class="col-12 col-md-6">
+                                                                <div class="row">
+                                                                    <div class="col-6 col-md-6">
+                                                                        <h6>Total General </h6>
+                                                                    </div>
+                                                                    <div class="col-6 col-md-6">
+                                                                        <p id="general"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-md-12 pt-2">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-3 col-md-3">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h6>General</h6>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h6>Ejercicios</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <p id="generalexercises"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-3">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h6>General</h6>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h6>Lecturas</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <p id="generalreadings"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-3">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h6>General</h6>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h6>Quiz</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <p id="generalquiz"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-3">
+                                                                <div class="row">
+                                                                    <div class="col-md-12">
+                                                                        <div class="row">
+                                                                            <div class="col-md-12">
+                                                                                <h6>General</h6>
+                                                                            </div>
+                                                                            <div class="col-md-12">
+                                                                                <h6>Nota</h6>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="col-md-12">
+                                                                        <p id="generalscore"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4  ">
+                                                <div class="row">
+                                                    <div class="col-md-12 ">
+                                                        <h5>Unidad 1</h5>
+                                                    </div>
+                                                    <div class="col-md-12 text-center">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>General</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="unit1"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Lecturas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="firstUnitReading"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6 >Quiz</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="firstUnitQuiz"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Notas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="firstUnitScore"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4  ">
+                                                <div class="row">
+                                                    <div class="col-md-12 ">
+                                                        <h5>Unidad 2</h5>
+                                                    </div>
+                                                    <div class="col-md-12 text-center">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>General</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="unit2"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Ejercicios</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="secondUnitExercises"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Lecturas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="secondUnitReading"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Quiz</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="secondUnitQuiz"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Notas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p  id="secondUnitScore"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4  ">
+                                                <div class="row">
+                                                    <div class="col-md-12 ">
+                                                        <h5>Unidad 3</h5>
+                                                    </div>
+                                                    <div class="col-md-12 text-center">
+                                                        <div class="row">
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>General</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="unit3"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Lecturas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="threeUnitReading"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-6 col-sm-3 col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Quiz</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p  id="threeUnitQuiz"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class=" col-md-12">
+                                                                <div class="row">
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <h6>Notas</h6>
+                                                                    </div>
+                                                                    <div class="col-md-12 col-lg-12 col-xl-6">
+                                                                        <p id="threeUnitScore"></p>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- fin vista reultado individual -->
+                </div>
+            </div>
+            <!-- fin de vista de resultados -->
+        </div>
+    </div>
+    </div>
+</body>
+<script src="event.js"></script>
 <script src="main2.js"></script>
 <script src="data.js"></script>
 <script src="main.js"></script>
-        
-       
-
-        
-  </body>
 </html>
-

@@ -11,9 +11,6 @@ let option ={
     orderDirection:"alazar",
     search:"",
   } ;
-  console.log(option);
-  
-
 //anidando data de js
 const AllData = (Callback) => 
 {
