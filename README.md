@@ -79,14 +79,14 @@ Por eso los objetivos de los usuarios(TMs) con relación a este producto es:
 ## DIAGRAMA DE FLUJO
 
 
-![Diagrama de Flujo](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/diagrama%20de%20lms.jpeg)
+![Diagrama de Flujo](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/diagrama%20de%20lms.jpeg)
 
 ## PROTOTIPADO (Proceso de diseño)
 Link de figma (https://www.figma.com/proto/SA4VROn6GQBM5Q5sQQ5QLa1g/Untitled?scaling=min-zoom&node-id=5%3A0 )
 BAJA FIDELIDAD
-![prototipo baja fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/baja%20fidelidad%202.jpeg) 
+![prototipo baja fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/baja%20fidelidad%202.jpeg) 
 ALTA FIDELIDAD
-![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes%20readme/figma%20en%20gif.gif)
+![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/figma%20en%20gif.gif)
 
 En el prototipo de alta fidelidad se muestra el promedio general del cohort selecionado, 
 tambien se ve que al seleccionar a una aqlumna muestra sus porcentajes deneralews y expecificos de sus unidades
@@ -142,8 +142,10 @@ comando `npm test`.
 Los siguentes videos muestran el producto final; El cual es responsive, posee un menú deplegable que se guarda para no interferir con la vista, tambien muestra los datos de las alumnas no solo de manera general, inclusive muestra sus avances por unidades.
 
 
-![En laptod](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes%20readme/GIF%20repo1.gif)
-![En celular](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes%20readme/GIF%20repo%202.gif)
+
+![En laptod](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/Imagenes-readme/1.jpg)
+
+![En celular](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/union/Imagenes-20readme/GIF%20repo%202.gif)
 
 
 |**Creado by Martha Milagros Anticona Zola y Maria Angélica Noriega**|
