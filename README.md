@@ -84,15 +84,9 @@ Por eso los objetivos de los usuarios(TMs) con relación a este producto es:
 ## PROTOTIPADO (Proceso de diseño)
 Link de figma (https://www.figma.com/proto/SA4VROn6GQBM5Q5sQQ5QLa1g/Untitled?scaling=min-zoom&node-id=5%3A0 )
 BAJA FIDELIDAD
-![prototipo baja fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/baja%20fidelidad%202.jpeg) 
+![prototipo baja fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/Imagenes-readme/baja%20fidelidad%202.jpeg) 
 ALTA FIDELIDAD
-![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/develop/Imagenes-readme/figma%20en%20gif.gif)
-
-En el prototipo de alta fidelidad se muestra el promedio general del cohort selecionado, 
-tambien se ve que al seleccionar a una aqlumna muestra sus porcentajes deneralews y expecificos de sus unidades
-
-![IMAGEN](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/img/gif/1.jpg)
-![IMAGEN2](https://github.com/milian0410/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/img/gif/10.jpg)
+![prototipo alta fidelidad](https://github.com/angelicanoriega/lim-2018-05-bc-core-pm-datadashboard/blob/gh-pages/Imagenes-readme/figma%20en%20gif.gif)
 
 ## IMPLEMENTACIÓN DE LA INTERFAZ DE USUARIO (HTML/CSS/JS)
 
